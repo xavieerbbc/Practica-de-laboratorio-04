@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Practica Hipermedial</title>
+    <link rel="stylesheet" href="../vista/css/crear_usuario.css">
+    <link rel="stylesheet" href="../vista/css/cabecera.css">
+</head>
+
+<body>
+
+    <header>
+        <!--Menu de Navegacion-->
+        <div class="ancho">
+            <nav>
+                <ul>
+                    <li><a href="../vista/crear_usuario.html">Crear Usuario</a></li>
+                    <li><a href="../../admin/vista/admin/index.php">Modificar</a></li>
+                    <li><a href="../vista/login.html">Iniciar Sesion</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+    </header>
+    <br>
+    <br>
+    <br>
+
+    <div class="contenedor">
+        <form action="../controladores/crear_usuario.php" method="POST" enctype="multipart/form-data">
+
+            <h2>Nuevo Usuario</h2>
+
+            <input type="text" name="cedula" placeholder="Cedula" required>
+            <input type="text" name="nombres" placeholder="Nombre" required>
+            <input type="text" name="apellidos" placeholder="Apellido" required>
+            <input type="text" name="direccion" placeholder="Direccion" required>
+            <input type="text" name="telefono" placeholder="Telefono" required>
+            <input type="email" name="correo" placeholder="Email" required>
+            <input type="date" name="fechaNacimiento" required>
+            <input type="password" name="contraseña" placeholder="Contraseña">
+            
+            <div class="foto">
+                <img class="perfil" src="../../config/imagenes/sinFoto.jpg" alt="">
+                <br>
+                <input type="file" name="foto" id="foto">
+            </div>
+            <input id="boton" type="submit" value="Registrar" required>
+        </form>
+       
+    </div>
+
+</body>
+
+</html>

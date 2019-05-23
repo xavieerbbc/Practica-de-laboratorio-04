@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+    font-family: cursive
+}
+body{
+    background: url(fondo1.jpg);
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: rale;
+    
+}
+form{
+    width: 60%;   
+}
+.contenedor{
+    width: 40%;
+    margin: auto;
+    display: flex;
+    background: rgba(0, 0, 0, .4);
+    margin-top: 40px;
+    border-radius: 20px;
+    padding: 20px 30px;
+}

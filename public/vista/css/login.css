@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+
+body {
+    background: url(../img/login.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+ 
+}
+
+form {
+    width: 450px;
+    margin: auto;
+    background: rgba(0, 0, 0, .2);
+    padding: 10px 20px;
+    margin-top: 250px;
+    border-radius: 7px;
+}
+
+h2 {
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+::placeholder {
+    font-family: rale;
+    color: springgreen;
+}
+
+input {
+    width: 100%;
+    margin-bottom: 18px;
+    padding: 15px;
+    font-size: 15px;
+    font-family: rale;
+    background: linear-gradient(to bottom, 
+    rgba(0, 221, 255, .6), 
+    rgba(0, 0, 0, .6));
+}
+
+
+#boton:hover {
+    width: 120%;
+    margin-left: -10%;
+    cursor: pointer;
+}
+
+#boton:active {
+    background-color: rgba(255, 255, 255, .2);
+    outline: 0;
+    border: 0;
+    border-radius: 5px;
+}
+
+#boton:focus {
+    background-color: rgba(255, 255, 255, .2);
+    outline: 0;
+    border: 0;
+    border-radius: 5px;
+}
+
+@media(max-width:480px) {
+    form {
+        width: 100%;
+    }
+}
+
+@font-face {
+    font-family: rale;
+    src: url(../fuentes/Raleway-Regular.ttf)
+}
